@@ -4,10 +4,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
-import java.sql.SQLDataException;
 import java.util.ArrayList;
+import java.util.List;
 
 import energigas.app.systemstrategy.energigas.entidades.Establecimiento;
 
@@ -134,8 +133,8 @@ public class DBEstablecimientos {
                 EstIEstablecimientoId+ "=?", new String[]{establecimiento.getEstIEstablecimientoId()+""});
     }
 
-    public ArrayList<Establecimiento> getEstablecimientos() {
-        ArrayList<Establecimiento> establecimientoArrayList = new ArrayList<Establecimiento>();
+    public List<Establecimiento> getEstablecimientos() {
+        List<Establecimiento> establecimientoArrayList = new ArrayList<Establecimiento>();
         Cursor cr = myDb.rawQuery(" select * from "+TABLA_ESTABLECIMIENTOS+" ;", null);
         while (cr.moveToNext()){
 
@@ -164,5 +163,6 @@ public class DBEstablecimientos {
         }
         return establecimientoArrayList;
     }
+
 
 }
