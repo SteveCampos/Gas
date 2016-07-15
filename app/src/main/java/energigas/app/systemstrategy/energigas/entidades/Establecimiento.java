@@ -5,200 +5,182 @@ package energigas.app.systemstrategy.energigas.entidades;
  */
 
 public class Establecimiento {
-    private int EstIEstablecimientoId;
-    private String EstVCodigo;
-    private String EstVDescripcion;
-    private int EstIClienteId;
-    private int UbId;
-    private int EstICategoriaId;
-    private int EstICanalId;
-    private String EstVTelefono;
-    private String EstVCelular;
-    private String EstIUsuarioCreacion;
-    private String EstDTFechaCreacion;
-    private String EstIUsuarioActualizacion;
-    private String EstDTFechaActualizacion;
-    private int EstIEstadoId;
-    private String EstIUsuarioAprobacion;
-    private String EstDTFechaAprobacion;
-    private String EstVObservacion;
-    private String EstVKeyFireBase;
-    private String EstVContacto;
+
+    private String estDTFechaActualizacion;
+    private int estICanalId;
+    private int estICategoriaId;
+    private int estIClienteId;
+    private int estIEstablecimientoId;
+    private int estIEstadoId;
+    private int estIUsuarioActualizacion;
+    private int estIUsuarioAprobacion;
+    private int estIUsuarioCreacion;
+    private String estVCelular;
+    private String estVCodigo;
+    private String estVContacto;
+    private String estVDescripcion;
+    private String estVKeyFireBase;
+    private String estVObservacion;
+    private String estVTelefono;
+    private int ubId;
 
     public Establecimiento() {
     }
 
-    public Establecimiento(int estIEstablecimientoId, String estVCodigo, String estVDescripcion, int estIClienteId, int ubId, int estICategoriaId, int estICanalId, String estVTelefono, String estVCelular, String estIUsuarioCreacion, String estDTFechaCreacion, String estIUsuarioActualizacion, String estDTFechaActualizacion, int estIEstadoId, String estIUsuarioAprobacion, String estDTFechaAprobacion, String estVObservacion, String estVKeyFireBase, String estVContacto) {
-        EstIEstablecimientoId = estIEstablecimientoId;
-        EstVCodigo = estVCodigo;
-        EstVDescripcion = estVDescripcion;
-        EstIClienteId = estIClienteId;
-        UbId = ubId;
-        EstICategoriaId = estICategoriaId;
-        EstICanalId = estICanalId;
-        EstVTelefono = estVTelefono;
-        EstVCelular = estVCelular;
-        EstIUsuarioCreacion = estIUsuarioCreacion;
-        EstDTFechaCreacion = estDTFechaCreacion;
-        EstIUsuarioActualizacion = estIUsuarioActualizacion;
-        EstDTFechaActualizacion = estDTFechaActualizacion;
-        EstIEstadoId = estIEstadoId;
-        EstIUsuarioAprobacion = estIUsuarioAprobacion;
-        EstDTFechaAprobacion = estDTFechaAprobacion;
-        EstVObservacion = estVObservacion;
-        EstVKeyFireBase = estVKeyFireBase;
-        EstVContacto = estVContacto;
+    public Establecimiento(String estDTFechaActualizacion, int estICanalId, int estICategoriaId, int estIClienteId, int estIEstablecimientoId, int estIEstadoId, int estIUsuarioActualizacion, int estIUsuarioAprobacion, int estIUsuarioCreacion, String estVCelular, String estVCodigo, String estVContacto, String estVDescripcion, String estVKeyFireBase, String estVObservacion, String estVTelefono, int ubId) {
+        this.estDTFechaActualizacion = estDTFechaActualizacion;
+        this.estICanalId = estICanalId;
+        this.estICategoriaId = estICategoriaId;
+        this.estIClienteId = estIClienteId;
+        this.estIEstablecimientoId = estIEstablecimientoId;
+        this.estIEstadoId = estIEstadoId;
+        this.estIUsuarioActualizacion = estIUsuarioActualizacion;
+        this.estIUsuarioAprobacion = estIUsuarioAprobacion;
+        this.estIUsuarioCreacion = estIUsuarioCreacion;
+        this.estVCelular = estVCelular;
+        this.estVCodigo = estVCodigo;
+        this.estVContacto = estVContacto;
+        this.estVDescripcion = estVDescripcion;
+        this.estVKeyFireBase = estVKeyFireBase;
+        this.estVObservacion = estVObservacion;
+        this.estVTelefono = estVTelefono;
+        this.ubId = ubId;
     }
 
-    public int getEstIEstablecimientoId() {
-        return EstIEstablecimientoId;
-    }
-
-    public void setEstIEstablecimientoId(int estIEstablecimientoId) {
-        EstIEstablecimientoId = estIEstablecimientoId;
-    }
-
-    public String getEstVCodigo() {
-        return EstVCodigo;
-    }
-
-    public void setEstVCodigo(String estVCodigo) {
-        EstVCodigo = estVCodigo;
-    }
-
-    public String getEstVDescripcion() {
-        return EstVDescripcion;
-    }
-
-    public void setEstVDescripcion(String estVDescripcion) {
-        EstVDescripcion = estVDescripcion;
-    }
-
-    public int getEstIClienteId() {
-        return EstIClienteId;
-    }
-
-    public void setEstIClienteId(int estIClienteId) {
-        EstIClienteId = estIClienteId;
-    }
-
-    public int getUbId() {
-        return UbId;
-    }
-
-    public void setUbId(int ubId) {
-        UbId = ubId;
-    }
-
-    public int getEstICategoriaId() {
-        return EstICategoriaId;
-    }
-
-    public void setEstICategoriaId(int estICategoriaId) {
-        EstICategoriaId = estICategoriaId;
-    }
-
-    public int getEstICanalId() {
-        return EstICanalId;
-    }
-
-    public void setEstICanalId(int estICanalId) {
-        EstICanalId = estICanalId;
-    }
-
-    public String getEstVTelefono() {
-        return EstVTelefono;
-    }
-
-    public void setEstVTelefono(String estVTelefono) {
-        EstVTelefono = estVTelefono;
-    }
-
-    public String getEstVCelular() {
-        return EstVCelular;
-    }
-
-    public void setEstVCelular(String estVCelular) {
-        EstVCelular = estVCelular;
-    }
-
-    public String getEstIUsuarioCreacion() {
-        return EstIUsuarioCreacion;
-    }
-
-    public void setEstIUsuarioCreacion(String estIUsuarioCreacion) {
-        EstIUsuarioCreacion = estIUsuarioCreacion;
-    }
-
-    public String getEstDTFechaCreacion() {
-        return EstDTFechaCreacion;
-    }
-
-    public void setEstDTFechaCreacion(String estDTFechaCreacion) {
-        EstDTFechaCreacion = estDTFechaCreacion;
-    }
-
-    public String getEstIUsuarioActualizacion() {
-        return EstIUsuarioActualizacion;
-    }
-
-    public void setEstIUsuarioActualizacion(String estIUsuarioActualizacion) {
-        EstIUsuarioActualizacion = estIUsuarioActualizacion;
-    }
 
     public String getEstDTFechaActualizacion() {
-        return EstDTFechaActualizacion;
+        return estDTFechaActualizacion;
     }
 
     public void setEstDTFechaActualizacion(String estDTFechaActualizacion) {
-        EstDTFechaActualizacion = estDTFechaActualizacion;
+        this.estDTFechaActualizacion = estDTFechaActualizacion;
+    }
+
+    public int getEstICanalId() {
+        return estICanalId;
+    }
+
+    public void setEstICanalId(int estICanalId) {
+        this.estICanalId = estICanalId;
+    }
+
+    public int getEstICategoriaId() {
+        return estICategoriaId;
+    }
+
+    public void setEstICategoriaId(int estICategoriaId) {
+        this.estICategoriaId = estICategoriaId;
+    }
+
+    public int getEstIClienteId() {
+        return estIClienteId;
+    }
+
+    public void setEstIClienteId(int estIClienteId) {
+        this.estIClienteId = estIClienteId;
+    }
+
+    public int getEstIEstablecimientoId() {
+        return estIEstablecimientoId;
+    }
+
+    public void setEstIEstablecimientoId(int estIEstablecimientoId) {
+        this.estIEstablecimientoId = estIEstablecimientoId;
     }
 
     public int getEstIEstadoId() {
-        return EstIEstadoId;
+        return estIEstadoId;
     }
 
     public void setEstIEstadoId(int estIEstadoId) {
-        EstIEstadoId = estIEstadoId;
+        this.estIEstadoId = estIEstadoId;
     }
 
-    public String getEstIUsuarioAprobacion() {
-        return EstIUsuarioAprobacion;
+    public int getEstIUsuarioActualizacion() {
+        return estIUsuarioActualizacion;
     }
 
-    public void setEstIUsuarioAprobacion(String estIUsuarioAprobacion) {
-        EstIUsuarioAprobacion = estIUsuarioAprobacion;
+    public void setEstIUsuarioActualizacion(int estIUsuarioActualizacion) {
+        this.estIUsuarioActualizacion = estIUsuarioActualizacion;
     }
 
-    public String getEstDTFechaAprobacion() {
-        return EstDTFechaAprobacion;
+    public int getEstIUsuarioAprobacion() {
+        return estIUsuarioAprobacion;
     }
 
-    public void setEstDTFechaAprobacion(String estDTFechaAprobacion) {
-        EstDTFechaAprobacion = estDTFechaAprobacion;
+    public void setEstIUsuarioAprobacion(int estIUsuarioAprobacion) {
+        this.estIUsuarioAprobacion = estIUsuarioAprobacion;
     }
 
-    public String getEstVObservacion() {
-        return EstVObservacion;
+    public int getEstIUsuarioCreacion() {
+        return estIUsuarioCreacion;
     }
 
-    public void setEstVObservacion(String estVObservacion) {
-        EstVObservacion = estVObservacion;
+    public void setEstIUsuarioCreacion(int estIUsuarioCreacion) {
+        this.estIUsuarioCreacion = estIUsuarioCreacion;
     }
 
-    public String getEstVKeyFireBase() {
-        return EstVKeyFireBase;
+    public String getEstVCelular() {
+        return estVCelular;
     }
 
-    public void setEstVKeyFireBase(String estVKeyFireBase) {
-        EstVKeyFireBase = estVKeyFireBase;
+    public void setEstVCelular(String estVCelular) {
+        this.estVCelular = estVCelular;
+    }
+
+    public String getEstVCodigo() {
+        return estVCodigo;
+    }
+
+    public void setEstVCodigo(String estVCodigo) {
+        this.estVCodigo = estVCodigo;
     }
 
     public String getEstVContacto() {
-        return EstVContacto;
+        return estVContacto;
     }
 
     public void setEstVContacto(String estVContacto) {
-        EstVContacto = estVContacto;
+        this.estVContacto = estVContacto;
+    }
+
+    public String getEstVDescripcion() {
+        return estVDescripcion;
+    }
+
+    public void setEstVDescripcion(String estVDescripcion) {
+        this.estVDescripcion = estVDescripcion;
+    }
+
+    public String getEstVKeyFireBase() {
+        return estVKeyFireBase;
+    }
+
+    public void setEstVKeyFireBase(String estVKeyFireBase) {
+        this.estVKeyFireBase = estVKeyFireBase;
+    }
+
+    public String getEstVObservacion() {
+        return estVObservacion;
+    }
+
+    public void setEstVObservacion(String estVObservacion) {
+        this.estVObservacion = estVObservacion;
+    }
+
+    public String getEstVTelefono() {
+        return estVTelefono;
+    }
+
+    public void setEstVTelefono(String estVTelefono) {
+        this.estVTelefono = estVTelefono;
+    }
+
+    public int getUbId() {
+        return ubId;
+    }
+
+    public void setUbId(int ubId) {
+        this.ubId = ubId;
     }
 }

@@ -1,4 +1,4 @@
-package energigas.app.systemstrategy.energigas.sqlite.db;
+package energigas.app.systemstrategy.energigas.sqlite.db.caja;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,13 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import energigas.app.systemstrategy.energigas.entidades.Establecimiento;
+import energigas.app.systemstrategy.energigas.sqlite.db.Helper;
 
 /**
  * Created by Kelvin on 06/07/2016.
  */
 
-public class DBEstablecimientos {
-
+public class DBPedidosDetalle {
+    public static final String _id="_id";
     public static final String EstIEstablecimientoId="EstIEstablecimientoId";
     public static final String EstVCodigo="EstVCodigo";
     public static final String EstVDescripcion="EstVDescripcion";
@@ -44,7 +45,8 @@ public class DBEstablecimientos {
 
     public static final String CREATE_TABLE_ESTABLECIMIENTOS=
             "create table if not exists "+TABLA_ESTABLECIMIENTOS+" ("
-                    +EstIEstablecimientoId+" integer primary key,"
+                    +_id+" integer primary key autoincrement,"
+                    +EstIEstablecimientoId+" text,"
                     +EstVCodigo+" text,"
                     +EstVDescripcion+ " text,"
                     +EstIClienteId+" text,"
@@ -67,7 +69,7 @@ public class DBEstablecimientos {
 
 
     public static final String DELETE_TABLE_ESTABLECIMIENTOS="DROP TABLE IF EXISTS " + TABLA_ESTABLECIMIENTOS;
-    public DBEstablecimientos(Context ctx){
+    public DBPedidosDetalle(Context ctx){
         this.mCtx = ctx;
     }
 
@@ -80,6 +82,7 @@ public class DBEstablecimientos {
             helper.close();
         }
     }
+    /*
 
     public long crearEstablecimiento(Establecimiento establecimiento){
 
@@ -164,5 +167,5 @@ public class DBEstablecimientos {
         return establecimientoArrayList;
     }
 
-
+*/
 }

@@ -1,8 +1,19 @@
 <resources>
     <string name="app_name">Energigas</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+
+    <!--
+    #### Valores para MainActivity ####
+    -->
+    <string name="main_dialog_title">Abriendo caja</string>
+    <string name="main_dialog_text_km_start">Kilometraje inicial</string>
+    <string name="main_dialog_text_weight_start">Peso inicial</string>
+    <string name="main_dialog_text_percent_start">Porcentaje inicial</string>
+
+    <string name="main_dialog_message_title">Abriendo Caja</string>
+    <string name="main_dialog_message_loanding">Conectando</string>
+
+    <!--##############################-->
 </resources>

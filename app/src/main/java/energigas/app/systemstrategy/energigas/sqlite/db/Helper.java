@@ -4,6 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import energigas.app.systemstrategy.energigas.sqlite.db.caja.DBEstablecimientos;
+
 
 /**
  * Created by Kelvin Thony on 06/07/2016.

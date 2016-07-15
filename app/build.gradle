@@ -42,6 +42,9 @@ dependencies {
     androidTestCompile "com.android.support:support-annotations:$support_annotations_version"
     compile "com.jakewharton:butterknife:$butterknife"
     apt "com.jakewharton:butterknife-compiler:$butterknife"
+    compile "com.fasterxml.jackson.core:jackson-core:$jackson"
+    compile "com.fasterxml.jackson.core:jackson-annotations:$jackson"
+    compile "com.fasterxml.jackson.core:jackson-databind:$jackson"
 }
 buildscript {
     ext.support_library_version = "23.4.0"
@@ -51,4 +54,5 @@ buildscript {
     ext.test_runner_version = "0.5"
     ext.support_annotations_version = "23.4.0"
     ext.butterknife = "8.2.1"
+    ext.jackson = "2.4.2"
 }
